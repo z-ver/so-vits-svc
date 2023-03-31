@@ -244,7 +244,13 @@ class Svc(object):
         # 清理显存
         torch.cuda.empty_cache()
 
-    def slice_inference(self,raw_audio_path, spk, tran, slice_db,cluster_infer_ratio, auto_predict_f0,noice_scale, pad_seconds=0.5, clip_seconds=0,lg_num=0,lgr_num =0.75):
+    def slice_inference(self,raw_audio_path, spk, tran, slice_db,cluster_infer_ratio, auto_predict_f0,noice_scale,
+                        pad_seconds=0.5,
+                        clip_seconds=0,
+                        lg_num=0,
+                        lgr_num =0.75,
+                        enhance=True,
+                        enhancer_adaptive_key=0):
         wav_path = raw_audio_path
         chunks = slicer.cut(wav_path, db_thresh=slice_db)
         audio_data, audio_sr = slicer.chunks2audio(wav_path, chunks)
@@ -281,7 +287,9 @@ class Svc(object):
                 out_audio, out_sr = self.infer(spk, tran, raw_path,
                                                     cluster_infer_ratio=cluster_infer_ratio,
                                                     auto_predict_f0=auto_predict_f0,
-                                                    noice_scale=noice_scale
+                                                    noice_scale=noice_scale,
+                                                    enhance=enhance,
+                                                    enhancer_adaptive_key=enhancer_adaptive_key
                                                     )
                 _audio = out_audio.cpu().numpy()
                 pad_len = int(self.target_sample * pad_seconds)
