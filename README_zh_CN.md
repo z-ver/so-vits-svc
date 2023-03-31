@@ -23,7 +23,7 @@
 
 ### 🆕 4.0 - Enhance版本更新内容
 
-+ 相比于4.0增加了[NFS-HIFIGAN增强器](https://github.com/yxlllc/DDSP-SVC)，在高频部分会增加部分细节，提升不是很大
++ 相比于4.0增加了[NFS-HIFIGAN增强器](https://github.com/yxlllc/DDSP-SVC)，会增加部分细节，提升不是很大
 
 ## 💬 关于 Python 版本问题
 
