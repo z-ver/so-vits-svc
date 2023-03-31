@@ -21,7 +21,7 @@
 
 The singing voice conversion model uses SoftVC content encoder to extract source audio speech features, then the vectors are directly fed into VITS instead of converting to a text based intermediate; thus the pitch and intonations are conserved. Additionally, the vocoder is changed to [NSF HiFiGAN](https://github.com/openvpi/DiffSinger/tree/refactor/modules/nsf_hifigan) to solve the problem of sound interruption.
 
-### 🆕 4.0 Version Update Content
+### 🆕 4.0 - Enhance Version Update Content
 
 - Compared to 4.0 adds [NFS-HIFIGAN Enhancer](https://github.com/yxlllc/DDSP-SVC), in the high frequency parts will increase details, ascension is not very big
 
