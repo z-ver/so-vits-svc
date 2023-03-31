@@ -23,7 +23,7 @@ The singing voice conversion model uses SoftVC content encoder to extract source
 
 ### 🆕 4.0 - Enhance Version Update Content
 
-- Compared to 4.0 adds [NFS-HIFIGAN Enhancer](https://github.com/yxlllc/DDSP-SVC), in the high frequency parts will increase details, ascension is not very big
+- Compared to 4.0 adds [NFS-HIFIGAN Enhancer](https://github.com/yxlllc/DDSP-SVC), It will increase details, ascension is not very big
 
 ## 💬 About Python Version
 
