@@ -1,0 +1,3 @@
+#!/Users/test/Documents/GitHub/so-vits-svc/sovitssvcvenv/bin/python
+from numba.pycc import main
+main()
